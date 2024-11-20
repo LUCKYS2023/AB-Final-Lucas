@@ -7,6 +7,6 @@ using namespace std;
 
 int main()
 {
-	cout << "Lo consegui jeje" << endl;
+	cout << "Lo consegui jiji" << endl;
 	return 0;
 }
