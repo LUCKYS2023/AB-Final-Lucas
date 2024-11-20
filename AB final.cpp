@@ -7,6 +7,6 @@ using namespace std;
 
 int main()
 {
-	cout << "Holi Angel" << endl;
+	cout << "Holi angel" << endl;
 	return 0;
 }
