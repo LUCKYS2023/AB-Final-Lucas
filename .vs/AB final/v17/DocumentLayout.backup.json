@@ -3,8 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\paciente.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:paciente.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\paciente.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:paciente.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\cita.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cita.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\cita.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cita.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\reporte.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:reporte.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\reporte.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:reporte.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\medico.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:medico.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\AB final.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AB final.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\medico.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:medico.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\AB final.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AB final.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +50,135 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "medico.cpp",
+              "DocumentMoniker": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\medico.cpp",
+              "RelativeDocumentMoniker": "medico.cpp",
+              "ToolTip": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\medico.cpp",
+              "RelativeToolTip": "medico.cpp",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-17T09:18:16.368Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "paciente.h",
+              "DocumentMoniker": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\paciente.h",
+              "RelativeDocumentMoniker": "paciente.h",
+              "ToolTip": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\paciente.h",
+              "RelativeToolTip": "paciente.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-13T15:33:55.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "paciente.cpp",
+              "DocumentMoniker": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\paciente.cpp",
+              "RelativeDocumentMoniker": "paciente.cpp",
+              "ToolTip": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\paciente.cpp",
+              "RelativeToolTip": "paciente.cpp",
+              "ViewState": "AgIAABoAAAAAAAAAAAAcwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-13T15:28:57.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "medico.h",
+              "DocumentMoniker": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\medico.h",
+              "RelativeDocumentMoniker": "medico.h",
+              "ToolTip": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\medico.h",
+              "RelativeToolTip": "medico.h",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-13T15:24:41.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "reporte.cpp",
+              "DocumentMoniker": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\reporte.cpp",
+              "RelativeDocumentMoniker": "reporte.cpp",
+              "ToolTip": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\reporte.cpp",
+              "RelativeToolTip": "reporte.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-13T15:22:37.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "reporte.h",
+              "DocumentMoniker": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\reporte.h",
+              "RelativeDocumentMoniker": "reporte.h",
+              "ToolTip": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\reporte.h",
+              "RelativeToolTip": "reporte.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-13T15:21:13.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AB final.h",
+              "DocumentMoniker": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\AB final.h",
+              "RelativeDocumentMoniker": "AB final.h",
+              "ToolTip": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\AB final.h",
+              "RelativeToolTip": "AB final.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-26T17:14:22.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AB final.cpp",
               "DocumentMoniker": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\AB final.cpp",
               "RelativeDocumentMoniker": "AB final.cpp",
               "ToolTip": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\AB final.cpp",
               "RelativeToolTip": "AB final.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAmwIkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-11-20T08:58:57.736Z",
+              "WhenOpened": "2024-11-26T17:13:30.449Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "cita.cpp",
+              "DocumentMoniker": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\cita.cpp",
+              "RelativeDocumentMoniker": "cita.cpp",
+              "ToolTip": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\cita.cpp",
+              "RelativeToolTip": "cita.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-26T16:46:02.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "cita.h",
+              "DocumentMoniker": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\cita.h",
+              "RelativeDocumentMoniker": "cita.h",
+              "ToolTip": "C:\\Users\\Lucas\\Desktop\\MSMK\\UNIT 20\\AB final\\cita.h",
+              "RelativeToolTip": "cita.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-26T17:14:18.913Z",
+              "EditorCaption": ""
             }
           ]
         }
