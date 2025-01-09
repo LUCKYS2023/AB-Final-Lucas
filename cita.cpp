@@ -6,7 +6,7 @@ Cita::Cita() : id(0), idPaciente(0), idMedico(0), fecha(""), hora(""), esUrgente
 
 // Constructor parametrizado
 Cita::Cita(int idPaciente, int idMedico, std::string fecha, std::string hora, bool esUrgente)
-    : idPaciente(idPaciente), idMedico(idMedico), fecha(fecha), hora(hora), esUrgente(esUrgente) {}
+    : id(0), idPaciente(idPaciente), idMedico(idMedico), fecha(fecha), hora(hora), esUrgente(esUrgente) {}
 
 // Destructor
 Cita::~Cita() {}
@@ -53,11 +53,11 @@ void Cita::cancelarCita() {
 }
 
 // Métodos de acceso
-int Cita::getIdPaciente() const {
+int Cita::getIdPac() const {
     return idPaciente;
 }
 
-int Cita::getIdMedico() const {
+int Cita::getIdMed() const {
     return idMedico;
 }
 
@@ -69,7 +69,7 @@ std::string Cita::getHora() const {
     return hora;
 }
 
-bool Cita::getEsUrgente() const {
+bool Cita::getEsUrge() const {
     return esUrgente;
 }
 

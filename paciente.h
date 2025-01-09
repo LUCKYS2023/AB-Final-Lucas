@@ -18,13 +18,13 @@ public:
     Paciente(int id, std::string nombre, std::string fechaIngreso, std::string enfermedades);
     ~Paciente();
 
-    void registrarPaciente();
-    void mostrarPaciente() const;
-    void modificarDatos(std::string nuevoNombre);
-    void agregarHistorial(std::string diagnostico);
-    void mostrarHistorial() const;
-    std::string getFechaIngreso() const;
-    std::string getEnfermedades() const;
+    void regisPac();
+    void mostrarPac() const;
+    void modifiDato(std::string nuevoNombre);
+    void agregarHist(std::string diagnostico);
+    void mostrarHist() const;
+    std::string getFechaIng() const;
+    std::string getEnfe() const;
     int getId() const;
     std::string getNombre() const;
 };

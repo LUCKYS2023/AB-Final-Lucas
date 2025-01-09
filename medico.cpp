@@ -8,7 +8,7 @@ Medico::Medico(int id, std::string nombre, std::string especialidad, bool dispon
 
 Medico::~Medico() {}
 
-void Medico::registrarMedico() {
+void Medico::regisMed() {
     std::cout << "Ingrese ID del medico: ";
     std::cin >> id;
     std::cin.ignore();
@@ -20,19 +20,19 @@ void Medico::registrarMedico() {
     std::cin >> disponible;
 }
 
-void Medico::modificarEspecialidad(const std::string& nuevaEspecialidad) {
+void Medico::modifiEspe(const std::string& nuevaEspecialidad) {
     especialidad = nuevaEspecialidad;
 }
 
-void Medico::cambiarDisponibilidad(bool nuevaDisponibilidad) {
+void Medico::cambiarDispo(bool nuevaDisponibilidad) {
     disponible = nuevaDisponibilidad;
 }
 
-void Medico::agregarHorario(const std::string& horario) {
+void Medico::agregarHor(const std::string& horario) {
     horarios.push_back(horario);
 }
 
-void Medico::mostrarHorarios() const {
+void Medico::mostrarHor() const {
     std::cout << "Horarios disponibles:\n";
     for (const auto& horario : horarios) {
         std::cout << "- " << horario << "\n";
@@ -47,19 +47,19 @@ std::string Medico::getNombre() const {
     return nombre;
 }
 
-std::string Medico::getEspecialidad() const {
+std::string Medico::getEspe() const {
     return especialidad;
 }
 
-bool Medico::getDisponible() const {
+bool Medico::getDispo() const {
     return disponible;
 }
 
-void Medico::mostrarMedico() const {
+void Medico::mostrarMed() const {
     std::cout << "Medico:\n";
     std::cout << "- ID: " << id << "\n";
     std::cout << "- Nombre: " << nombre << "\n";
     std::cout << "- Especialidad: " << especialidad << "\n";
     std::cout << "- Disponible: " << (disponible ? "Si" : "No") << "\n";
-    mostrarHorarios();
+    mostrarHor();
 }

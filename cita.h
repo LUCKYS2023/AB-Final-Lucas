@@ -3,14 +3,15 @@
 
 #include <string>
 
-class Cita {
+class Cita
+{
 private:
     int id;
-    int idPaciente;            // ID del paciente asignado a la cita
-    int idMedico;              // ID del médico asignado a la cita
-    std::string fecha;         // Fecha de la cita (formato YYYY-MM-DD)
-    std::string hora;          // Hora de la cita (formato HH:MM)
-    bool esUrgente;            // Indica si la cita es urgente
+    int idPaciente;    // ID del paciente asignado a la cita
+    int idMedico;      // ID del médico asignado a la cita
+    std::string fecha; // Fecha de la cita (formato YYYY-MM-DD)
+    std::string hora;  // Hora de la cita (formato HH:MM)
+    bool esUrgente;    // Indica si la cita es urgente
 
 public:
     // Constructores y destructor
@@ -24,13 +25,12 @@ public:
     void cancelarCita();
     int getId() const;
 
-
     // Métodos de acceso
-    int getIdPaciente() const;
-    int getIdMedico() const;
+    int getIdPac() const;
+    int getIdMed() const;
     std::string getFecha() const;
     std::string getHora() const;
-    bool getEsUrgente() const;
+    bool getEsUrge() const;
 
     // Métodos para mostrar información
     void mostrarCita() const;

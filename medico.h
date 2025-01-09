@@ -17,18 +17,18 @@ public:
     Medico(int id, std::string nombre, std::string especialidad, bool disponible);
     ~Medico();
 
-    void registrarMedico();
-    void modificarEspecialidad(const std::string& nuevaEspecialidad);
-    void cambiarDisponibilidad(bool nuevaDisponibilidad);
-    void agregarHorario(const std::string& horario);
-    void mostrarHorarios() const;
+    void regisMed();
+    void modifiEspe(const std::string& nuevaEspecialidad);
+    void cambiarDispo(bool nuevaDisponibilidad);
+    void agregarHor(const std::string& horario);
+    void mostrarHor() const;
 
     int getId() const;
     std::string getNombre() const;
-    std::string getEspecialidad() const;
-    bool getDisponible() const;
+    std::string getEspe() const;
+    bool getDispo() const;
 
-    void mostrarMedico() const;
+    void mostrarMed() const;
 };
 
 #endif

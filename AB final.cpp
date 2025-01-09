@@ -15,25 +15,25 @@ std::vector<Medico> medicos;
 std::vector<Cita> citas;
 
 // Menú de gestión de pacientes
-void gestionarPacientes()
+void gestionPac()
 {
     int opcion;
     do
     {
-        std::cout << "\n--- Gestion de Pacientes ---\n";
+        std::cout << "\n--- Gestion de pacientes ---\n";
         std::cout << "1. Registrar paciente\n";
         std::cout << "2. Modificar datos personales\n";
         std::cout << "3. Buscar paciente\n";
         std::cout << "4. Mostrar pacientes\n";
-        std::cout << "5. Regresar al Menú Principal\n";
+        std::cout << "5. Regresar al menu principal\n";
         std::cout << "Seleccione una opcion: ";
         std::cin >> opcion;
 
         if (opcion == 1)
         {
-            Paciente nuevoPaciente;
-            nuevoPaciente.registrarPaciente();
-            pacientes.push_back(nuevoPaciente);
+            Paciente nuevoPac;
+            nuevoPac.regisPac();
+            pacientes.push_back(nuevoPac);
             std::cout << "Paciente registrado con exito.\n";
         }
         else if (opcion == 2)
@@ -45,7 +45,11 @@ void gestionarPacientes()
             {
                 if (paciente.getId() == id)
                 {
-                    paciente.modificarDatos(0);
+                    std::string nuevoNombre;
+                    std::cout << "Ingrese el nuevo nombre del paciente: ";
+                    std::cin.ignore();
+                    std::getline(std::cin, nuevoNombre);
+                    paciente.modifiDato(nuevoNombre);
                     break;
                 }
             }
@@ -59,7 +63,7 @@ void gestionarPacientes()
             {
                 if (paciente.getId() == id)
                 {
-                    paciente.mostrarPaciente();
+                    paciente.mostrarPac();
                     break;
                 }
             }
@@ -68,31 +72,31 @@ void gestionarPacientes()
         {
             for (const auto &paciente : pacientes)
             {
-                paciente.mostrarPaciente();
+                paciente.mostrarPac();
             }
         }
     } while (opcion != 5);
 }
 
 // Menú de gestión de médicos
-void gestionarMedicos()
+void gestionMed()
 {
     int opcion;
     do
     {
-        std::cout << "\n--- Gestión de Medicos ---\n";
+        std::cout << "\n--- Gestion de medicos ---\n";
         std::cout << "1. Registrar medico\n";
         std::cout << "2. Modificar especialidad\n";
         std::cout << "3. Cambiar disponibilidad\n";
         std::cout << "4. Mostrar medicos\n";
-        std::cout << "5. Regresar al Menu Principal\n";
+        std::cout << "5. Regresar al menu principal\n";
         std::cout << "Seleccione una opcion: ";
         std::cin >> opcion;
 
         if (opcion == 1)
         {
             Medico nuevoMedico;
-            nuevoMedico.registrarMedico();
+            nuevoMedico.regisMed();
             medicos.push_back(nuevoMedico);
             std::cout << "Medico registrado con exito.\n";
         }
@@ -109,7 +113,7 @@ void gestionarMedicos()
                     std::cin.ignore();
                     std::cout << "Ingrese la nueva especialidad: ";
                     std::getline(std::cin, nuevaEspecialidad);
-                    medico.modificarEspecialidad(nuevaEspecialidad);
+                    medico.modifiEspe(nuevaEspecialidad);
                     std::cout << "Especialidad modificada con exito.\n";
                     break;
                 }
@@ -127,7 +131,7 @@ void gestionarMedicos()
                     bool nuevaDisponibilidad;
                     std::cout << "¿Esta disponible? (1 para Si, 0 para No): ";
                     std::cin >> nuevaDisponibilidad;
-                    medico.cambiarDisponibilidad(nuevaDisponibilidad);
+                    medico.cambiarDispo(nuevaDisponibilidad);
                     std::cout << "Disponibilidad actualizada.\n";
                     break;
                 }
@@ -137,7 +141,7 @@ void gestionarMedicos()
         {
             for (const auto &medico : medicos)
             {
-                medico.mostrarMedico();
+                medico.mostrarMed();
             }
         }
     } while (opcion != 5);
@@ -149,11 +153,11 @@ void gestionarCitas()
     int opcion;
     do
     {
-        std::cout << "\n--- Gestion de Citas ---\n";
+        std::cout << "\n--- Gestion de citas ---\n";
         std::cout << "1. Registrar cita\n";
         std::cout << "2. Modificar cita\n";
         std::cout << "3. Mostrar citas\n";
-        std::cout << "4. Regresar al Menu Principal\n";
+        std::cout << "4. Regresar al menu principal\n";
         std::cout << "Seleccione una opcion: ";
         std::cin >> opcion;
 
@@ -194,11 +198,11 @@ void gestionarReportes()
     int opcion;
     do
     {
-        std::cout << "\n--- Generacion de Reportes ---\n";
+        std::cout << "\n--- Generacion de reportes ---\n";
         std::cout << "1. Listar pacientes atendidos en un rango de fechas\n";
         std::cout << "2. Listar citas pendientes por medico\n";
         std::cout << "3. Listar pacientes con enfermedades cronicas\n";
-        std::cout << "4. Regresar al Menu Principal\n";
+        std::cout << "4. Regresar al menu principal\n";
         std::cout << "Seleccione una opcion: ";
         std::cin >> opcion;
 
@@ -209,18 +213,18 @@ void gestionarReportes()
             std::cin >> fechaInicio;
             std::cout << "Ingrese la fecha de fin (DD-MM-YYYY): ";
             std::cin >> fechaFin;
-            Reporte::listarPacientesAtendidos(pacientes, fechaInicio, fechaFin);
+            Reporte::listaPacAtend(pacientes, fechaInicio, fechaFin);
         }
         else if (opcion == 2)
         {
             int idMedico;
             std::cout << "Ingrese ID del medico: ";
             std::cin >> idMedico;
-            Reporte::listarCitasPendientesPorMedico(citas, idMedico);
+            Reporte::listaCitasPendPorMed(citas, idMedico);
         }
         else if (opcion == 3)
         {
-            Reporte::pacientesConEnfermedadesCronicas(pacientes);
+            Reporte::pacConEnfeCroni(pacientes);
         }
     } while (opcion != 4);
 }
@@ -231,11 +235,11 @@ int main()
     int opcion;
     do
     {
-        std::cout << "\n=== Sistema de Gestion Hospitalaria ===\n";
-        std::cout << "1. Gestion de Pacientes\n";
-        std::cout << "2. Gestion de Médicos\n";
-        std::cout << "3. Gestion de Citas\n";
-        std::cout << "4. Generacion de Reportes\n";
+        std::cout << "\n=== Sistema de gestion hospitalaria ===\n";
+        std::cout << "1. Gestion de pacientes\n";
+        std::cout << "2. Gestion de medicos\n";
+        std::cout << "3. Gestion de citas\n";
+        std::cout << "4. Generacion de reportes\n";
         std::cout << "5. Salir\n";
         std::cout << "Seleccione una opcion: ";
         std::cin >> opcion;
@@ -243,10 +247,10 @@ int main()
         switch (opcion)
         {
         case 1:
-            gestionarPacientes();
+            gestionPac();
             break;
         case 2:
-            gestionarMedicos();
+            gestionMed();
             break;
         case 3:
             gestionarCitas();
@@ -258,7 +262,7 @@ int main()
             std::cout << "Saliendo del sistema...\n";
             break;
         default:
-            std::cout << "Opcion inválida. Intente nuevamente.\n";
+            std::cout << "Opcion invalida. Intente nuevamente.\n";
         }
     } while (opcion != 5);
 

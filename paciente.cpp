@@ -7,44 +7,44 @@ Paciente::Paciente(int id, std::string nombre, std::string fechaIngreso, std::st
 
 Paciente::~Paciente() {}
 
-void Paciente::registrarPaciente() {
+void Paciente::regisPac() {
     std::cout << "Ingrese ID: ";
     std::cin >> id;
     std::cin.ignore();
-    std::cout << "Ingrese Nombre: ";
+    std::cout << "Ingrese nombre: ";
     std::getline(std::cin, nombre);
-    std::cout << "Ingrese Enfermedades (separadas por comas): ";
+    std::cout << "Ingrese enfermedades (separadas por comas): ";
     std::getline(std::cin, enfermedades);
-    std::cout << "Ingrese Fecha de Ingreso (DD-MM-YYYY): ";
+    std::cout << "Ingrese fecha de ingreso (DD-MM-YYYY): ";
     std::getline(std::cin, fechaIngreso);
 }
 
-void Paciente::mostrarPaciente() const {
+void Paciente::mostrarPac() const {
     std::cout << "ID: " << id << "\nNombre: " << nombre
               << "\nEnfermedades: " << enfermedades
               << "\nFecha de ingreso: " << fechaIngreso << "\n";
 }
 
-void Paciente::modificarDatos(std::string nuevoNombre) {
+void Paciente::modifiDato(const std::string nuevoNombre) {
     nombre = nuevoNombre;
 }
 
-void Paciente::agregarHistorial(std::string diagnostico) {
+void Paciente::agregarHist(std::string diagnostico) {
     historialClinico.push_back(diagnostico);
 }
 
-void Paciente::mostrarHistorial() const {
+void Paciente::mostrarHist() const {
     std::cout << "Historial Clinico:\n";
     for (const auto& registro : historialClinico) {
         std::cout << "- " << registro << "\n";
     }
 }
 
-std::string Paciente::getFechaIngreso() const {
+std::string Paciente::getFechaIng() const {
     return fechaIngreso;
 }
 
-std::string Paciente::getEnfermedades() const {
+std::string Paciente::getEnfe() const {
     return enfermedades;
 }
 

@@ -9,9 +9,9 @@
 
 class Reporte {
 public:
-    static void listarPacientesAtendidos(const std::vector<Paciente>& pacientes, const std::string& fechaInicio, const std::string& fechaFin);
-    static void listarCitasPendientesPorMedico(const std::vector<Cita>& citas, int idMedico);
-    static void pacientesConEnfermedadesCronicas(const std::vector<Paciente>& pacientes);
+    static void listaPacAtend(const std::vector<Paciente>& pacientes, const std::string& fechaInicio, const std::string& fechaFin);
+    static void listaCitasPendPorMed(const std::vector<Cita>& citas, int idMedico);
+    static void pacConEnfeCroni(const std::vector<Paciente>& pacientes);
 };
 
 #endif
