@@ -5,6 +5,7 @@
 
 class Cita {
 private:
+    int id;
     int idPaciente;            // ID del paciente asignado a la cita
     int idMedico;              // ID del médico asignado a la cita
     std::string fecha;         // Fecha de la cita (formato YYYY-MM-DD)
@@ -18,9 +19,11 @@ public:
     ~Cita();
 
     // Métodos para asignar y modificar citas
-    void asignarCita(int idPaciente, int idMedico, std::string fecha, std::string hora, bool esUrgente);
-    void modificarCita(std::string nuevaFecha, std::string nuevaHora, bool nuevaUrgencia);
+    void asignarCita();
+    void modificarCita();
     void cancelarCita();
+    int getId() const;
+
 
     // Métodos de acceso
     int getIdPaciente() const;
