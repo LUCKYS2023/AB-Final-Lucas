@@ -14,6 +14,48 @@ std::vector<Paciente> pacientes;
 std::vector<Medico> medicos;
 std::vector<Cita> citas;
 
+// Datos predeterminados del programa
+void inicializarDatos()
+{
+    // Pacientes predeterminados
+    pacientes.push_back(Paciente(1, "Juan Domingo", "2024-11-01", "Hipertension"));
+    pacientes.push_back(Paciente(2, "Maria Lainez", "2024-12-20", "Diabetes"));
+    pacientes.push_back(Paciente(3, "Carlos Rando", "2025-01-15", "Asma"));
+    pacientes.push_back(Paciente(4, "Lucas Germes", "2025-01-13", "Gripe A"));
+    pacientes.push_back(Paciente(5, "Juan Pallares", "2025-01-15", "Varicela"));
+    pacientes.push_back(Paciente(6, "Pilar Cutando", "2025-01-09", "Leucemia"));
+    pacientes.push_back(Paciente(7, "Jose Maria Rodrigo", "2025-01-05", "Anginas"));
+    pacientes.push_back(Paciente(8, "Victor Ruiz", "2025-01-19", "Ebola"));
+    pacientes.push_back(Paciente(9, "Ismael Lopez", "2025-01-20", "Pancreatitis"));
+    pacientes.push_back(Paciente(10, "Jorge Rodrigo", "2025-01-01", "Hepatitis C"));
+
+    // Médicos predeterminados
+    Medico medico1(1, "Dr. Ana Torres", "Cardiologia", true);
+    medico1.agregarHor("Lunes 09:00-12:00");
+    medico1.agregarHor("Miércoles 14:00-16:00");
+    medicos.push_back(medico1);
+
+    Medico medico2(2, "Dr. Luis De la Rosa", "Endocrinologia", true);
+    medico2.agregarHor("Martes 10:00-13:00");
+    medico2.agregarHor("Jueves 15:00-17:00");
+    medicos.push_back(medico2);
+
+    Medico medico3(3, "Dra. Paula Perez", "Fisioterapeuta", true);
+    medico2.agregarHor("Mmiercoles 9:00-12:00");
+    medico2.agregarHor("Viernes 14:00-17:00");
+    medicos.push_back(medico3);
+
+    Medico medico4(4, "Dr. Ernesto Velasco", "Podologia", true);
+    medico2.agregarHor("Viernes 12:00-15:00");
+    medico2.agregarHor("Domingo 17:00-21:00");
+    medicos.push_back(medico4);
+
+    Medico medico5(5, "Dr. Angel Saura", "Cirugia General", true);
+    medico2.agregarHor("Viernes 12:00-15:00");
+    medico2.agregarHor("Domingo 17:00-21:00");
+    medicos.push_back(medico5);
+}
+
 // Menú de gestión de pacientes
 void gestionPac()
 {
