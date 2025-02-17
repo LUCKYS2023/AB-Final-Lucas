@@ -3,6 +3,8 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
+#include <fstream>
 
 class Medico {
 private:
@@ -29,6 +31,10 @@ public:
     bool getDispo() const;
 
     void mostrarMed() const;
+
+    // Funciones para manejar archivos
+    static void guardarMedicos(const std::vector<Medico>& medicos);
+    static void cargarMedicos(std::vector<Medico>& medicos);
 };
 
 #endif

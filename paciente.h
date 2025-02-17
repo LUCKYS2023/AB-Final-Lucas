@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <fstream>
 
 class Paciente {
 private:
@@ -23,10 +24,15 @@ public:
     void modifiDato(std::string nuevoNombre);
     void agregarHist(std::string diagnostico);
     void mostrarHist() const;
+
     std::string getFechaIng() const;
     std::string getEnfe() const;
     int getId() const;
     std::string getNombre() const;
+
+    // Funciones para manejo de archivos
+    static void guardarPacientes(const std::vector<Paciente>& pacientes);
+    static void cargarPacientes(std::vector<Paciente>& pacientes);
 };
 
 #endif

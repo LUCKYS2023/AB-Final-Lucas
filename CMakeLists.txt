@@ -9,7 +9,7 @@ if (POLICY CMP0141)
   set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
 endif()
 
-project ("AB final")
+project ("prueba")
 
 # Agregue un origen al ejecutable de este proyecto.
 add_executable (CMakeTarget "paciente.cpp" "paciente.h" "medico.cpp" "medico.h" "cita.cpp" "cita.h" "AB final.cpp" "AB final.h" "reporte.h" "reporte.cpp")

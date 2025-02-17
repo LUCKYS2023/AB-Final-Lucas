@@ -1,10 +1,10 @@
 #include "Medico.h"
-#include <iostream>
 
 Medico::Medico() : id(0), nombre(""), especialidad(""), disponible(false) {}
 
 Medico::Medico(int id, std::string nombre, std::string especialidad, bool disponible)
-    : id(id), nombre(nombre), especialidad(especialidad), disponible(disponible) {}
+    : id(id), nombre(nombre), especialidad(especialidad), disponible(disponible) {
+}
 
 Medico::~Medico() {}
 
@@ -39,21 +39,10 @@ void Medico::mostrarHor() const {
     }
 }
 
-int Medico::getId() const {
-    return id;
-}
-
-std::string Medico::getNombre() const {
-    return nombre;
-}
-
-std::string Medico::getEspe() const {
-    return especialidad;
-}
-
-bool Medico::getDispo() const {
-    return disponible;
-}
+int Medico::getId() const { return id; }
+std::string Medico::getNombre() const { return nombre; }
+std::string Medico::getEspe() const { return especialidad; }
+bool Medico::getDispo() const { return disponible; }
 
 void Medico::mostrarMed() const {
     std::cout << "Medico:\n";
@@ -62,4 +51,34 @@ void Medico::mostrarMed() const {
     std::cout << "- Especialidad: " << especialidad << "\n";
     std::cout << "- Disponible: " << (disponible ? "Si" : "No") << "\n";
     mostrarHor();
+}
+
+// FUNCIONES PARA GUARDAR Y CARGAR MÉDICOS
+
+void Medico::guardarMedicos(const std::vector<Medico>& medicos) {
+    std::ofstream archivo("medicos.txt");
+    for (const auto& medico : medicos) {
+        archivo << medico.id << "," << medico.nombre << ","
+            << medico.especialidad << "," << medico.disponible << "\n";
+    }
+    archivo.close();
+}
+
+void Medico::cargarMedicos(std::vector<Medico>& medicos) {
+    std::ifstream archivo("medicos.txt");
+    if (!archivo) return;
+
+    medicos.clear();
+    int id;
+    std::string nombre, especialidad;
+    bool disponible;
+
+    while (archivo >> id) {
+        archivo.ignore();
+        std::getline(archivo, nombre, ',');
+        std::getline(archivo, especialidad, ',');
+        archivo >> disponible;
+        medicos.push_back(Medico(id, nombre, especialidad, disponible));
+    }
+    archivo.close();
 }

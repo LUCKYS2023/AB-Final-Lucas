@@ -1,17 +1,22 @@
 #include "Cita.h"
 #include <iostream>
 
-// Constructor por defecto
+void Cita::cargarCitas(std::vector<Cita>& citas) {
+    citas.push_back(Cita(1, 1, "2024-12-01", "10:00", false));
+    citas.push_back(Cita(2, 3, "2024-12-02", "14:00", true));
+    citas.push_back(Cita(3, 5, "2024-12-03", "09:30", false));
+    citas.push_back(Cita(4, 2, "2024-12-04", "12:00", true));
+    citas.push_back(Cita(5, 4, "2024-12-05", "16:45", false));
+}
+
 Cita::Cita() : id(0), idPaciente(0), idMedico(0), fecha(""), hora(""), esUrgente(false) {}
 
-// Constructor parametrizado
 Cita::Cita(int idPaciente, int idMedico, std::string fecha, std::string hora, bool esUrgente)
-    : id(0), idPaciente(idPaciente), idMedico(idMedico), fecha(fecha), hora(hora), esUrgente(esUrgente) {}
+    : id(0), idPaciente(idPaciente), idMedico(idMedico), fecha(fecha), hora(hora), esUrgente(esUrgente) {
+}
 
-// Destructor
 Cita::~Cita() {}
 
-// Asignar una cita
 void Cita::asignarCita() {
     std::cout << "Ingrese ID de la cita: ";
     std::cin >> id;
@@ -28,7 +33,6 @@ void Cita::asignarCita() {
     std::cin >> esUrgente;
 }
 
-// Modificar una cita
 void Cita::modificarCita() {
     std::cin.ignore();
     std::cout << "Ingrese nueva fecha (DD-MM-YYYY): ";
@@ -43,16 +47,14 @@ int Cita::getId() const {
     return id;
 }
 
-// Cancelar una cita
 void Cita::cancelarCita() {
-    this->idPaciente = 0;
-    this->idMedico = 0;
-    this->fecha = "";
-    this->hora = "";
-    this->esUrgente = false;
+    idPaciente = 0;
+    idMedico = 0;
+    fecha = "";
+    hora = "";
+    esUrgente = false;
 }
 
-// Métodos de acceso
 int Cita::getIdPac() const {
     return idPaciente;
 }
@@ -73,9 +75,9 @@ bool Cita::getEsUrge() const {
     return esUrgente;
 }
 
-// Mostrar información de la cita
 void Cita::mostrarCita() const {
     std::cout << "Cita:\n";
+    std::cout << "- ID: " << id << "\n";
     std::cout << "- Paciente ID: " << idPaciente << "\n";
     std::cout << "- Medico ID: " << idMedico << "\n";
     std::cout << "- Fecha: " << fecha << "\n";

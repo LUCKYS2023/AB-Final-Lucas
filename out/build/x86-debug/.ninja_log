@@ -1,8 +1,0 @@
-# ninja log v6
-22	1127	7581421420060972	CMakeFiles/CMakeTarget.dir/AB_final.cpp.obj	601f55e0216d3f89
-62	1454	7581402425848534	CMakeFiles/CMakeTarget.dir/cita.cpp.obj	6c21d6036e7e7453
-55	1522	7581402425848534	CMakeFiles/CMakeTarget.dir/medico.cpp.obj	a986bfcf9f99137f
-1167	1353	7581421431496206	CMakeTarget.exe	442ddb49810ba409
-20	896	7581405610311391	CMakeFiles/CMakeTarget.dir/paciente.cpp.obj	559399a6bed17a32
-11	176	7581425256861731	build.ninja	20a6b84a90437933
-27	1167	7581421420060972	CMakeFiles/CMakeTarget.dir/reporte.cpp.obj	2c11581d30e154c4

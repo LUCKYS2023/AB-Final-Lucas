@@ -3,7 +3,8 @@
 Paciente::Paciente() : id(0), nombre(""), fechaIngreso(""), enfermedades("") {}
 
 Paciente::Paciente(int id, std::string nombre, std::string fechaIngreso, std::string enfermedades)
-    : id(id), nombre(nombre), fechaIngreso(fechaIngreso), enfermedades(enfermedades) {}
+    : id(id), nombre(nombre), fechaIngreso(fechaIngreso), enfermedades(enfermedades) {
+}
 
 Paciente::~Paciente() {}
 
@@ -21,8 +22,8 @@ void Paciente::regisPac() {
 
 void Paciente::mostrarPac() const {
     std::cout << "ID: " << id << "\nNombre: " << nombre
-              << "\nEnfermedades: " << enfermedades
-              << "\nFecha de ingreso: " << fechaIngreso << "\n";
+        << "\nEnfermedades: " << enfermedades
+        << "\nFecha de ingreso: " << fechaIngreso << "\n";
 }
 
 void Paciente::modifiDato(const std::string nuevoNombre) {
@@ -40,18 +41,36 @@ void Paciente::mostrarHist() const {
     }
 }
 
-std::string Paciente::getFechaIng() const {
-    return fechaIngreso;
+std::string Paciente::getFechaIng() const { return fechaIngreso; }
+std::string Paciente::getEnfe() const { return enfermedades; }
+int Paciente::getId() const { return id; }
+std::string Paciente::getNombre() const { return nombre; }
+
+// FUNCIONES PARA GUARDAR Y CARGAR PACIENTES
+
+void Paciente::guardarPacientes(const std::vector<Paciente>& pacientes) {
+    std::ofstream archivo("pacientes.txt");
+    for (const auto& paciente : pacientes) {
+        archivo << paciente.id << "," << paciente.nombre << ","
+            << paciente.fechaIngreso << "," << paciente.enfermedades << "\n";
+    }
+    archivo.close();
 }
 
-std::string Paciente::getEnfe() const {
-    return enfermedades;
-}
+void Paciente::cargarPacientes(std::vector<Paciente>& pacientes) {
+    std::ifstream archivo("pacientes.txt");
+    if (!archivo) return;
 
-int Paciente::getId() const {
-    return id;
-}
+    pacientes.clear();
+    int id;
+    std::string nombre, fechaIngreso, enfermedades;
 
-std::string Paciente::getNombre() const {
-    return nombre;
+    while (archivo >> id) {
+        archivo.ignore();
+        std::getline(archivo, nombre, ',');
+        std::getline(archivo, fechaIngreso, ',');
+        std::getline(archivo, enfermedades);
+        pacientes.push_back(Paciente(id, nombre, fechaIngreso, enfermedades));
+    }
+    archivo.close();
 }
